@@ -1,0 +1,11 @@
+.container {
+	height: var(--top-nav-height);
+	background: var(--color-BG2);
+	border-bottom: 1px solid #E4E7ED;
+	margin-left: var(--aside-width);
+}
+
+.section {
+	display: flex;
+	align-items: center;
+}
