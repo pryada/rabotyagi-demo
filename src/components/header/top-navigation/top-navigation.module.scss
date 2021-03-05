@@ -1,0 +1,41 @@
+.navigation {
+	display: flex;
+	justify-content: center;
+	margin-left: 41px;
+}
+
+.block {
+	height: var(--top-nav-height);
+	margin-left: 5px;
+	border-bottom: 4px solid transparent;
+	display: inline-flex;
+	align-items: center;
+	padding: 0 15px;
+
+	&:hover {
+		border-bottom: 4px solid var(--color-blue);
+
+		& .item {
+			color: var(--color-blue);
+		}
+	}
+}
+
+.link {
+	text-decoration: none;
+}
+
+.item {
+	font-size: 1.15rem;
+	color: var(--color-gray-text);
+}
+
+.active {
+	.block {
+		border-bottom: 4px solid var(--color-blue);
+	}
+
+	.item {
+		color: var(--color-blue);
+	}
+}
