@@ -1,0 +1,4 @@
+.container {
+    margin-left: var(--aside-width);
+    background: var(--color-main-background);
+}
