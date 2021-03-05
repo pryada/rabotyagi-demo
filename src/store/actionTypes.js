@@ -1,0 +1,10 @@
+export const DEFAULT = "DEFAULT";
+export const GET_DAIRYS = "GET_DAIRYS";
+export const GET_GROUPED_DAIRYS = "GET_GROUPED_DAIRYS";
+export const SET_LOADING = "SET_LOADING";
+export const FILTER_BY = "FILTER_BY";
+export const GET_DATA = "GET_DATA";
+export const OPEN = "OPEN";
+export const CLOSE = "CLOSE";
+export const FILTER_BY_USER = "FILTER_BY_USER";
+export const FILTER_BY_NAME = "FILTER_BY_NAME";
