@@ -1,0 +1,37 @@
+.wrapper {
+	display: flex;
+	align-items: center;
+	margin-left: 27px;
+	margin-right: 50px;
+}
+
+.avatar {
+	height: 32px;
+	width: 32px;
+	border-radius: 50%;
+	background-color: var(--color-marker-disabled);
+}
+
+.column {
+	display: inline-flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+
+.name {
+	font-family: var(--default-font-family);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.15rem;
+	line-height: 1.38rem;
+	color: var(--color-gray-text)
+}
+
+.role {
+	font-family: var(--default-font-family);
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.85rem;
+	line-height: 1.29rem;
+	color: var(--color-deep-blue);
+}
