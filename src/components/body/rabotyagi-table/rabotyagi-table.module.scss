@@ -1,0 +1,90 @@
+.table {
+	width: 100%;
+	border-collapse: collapse;
+
+	td,
+	th {
+		text-align: left;
+		padding: 21px 0;
+		font-family: var(--default-font-family);
+		font-style: normal;
+		font-weight: 500;
+		line-height: 129%;
+
+		&:last-child {
+			border-bottom-right-radius: 12px;
+			border-top-right-radius: 12px;
+			-moz-border-radius-bottomright: 12px;
+			-moz-border-radius-topright: 12px;
+			padding: 21px;
+		}
+
+		&:first-child {
+			border-bottom-left-radius: 12px;
+			border-top-left-radius: 12px;
+			-moz-border-radius-bottomleft: 12px;
+			-moz-border-radius-topleft: 12px;
+			padding: 21px;
+		}
+	}
+
+	th {
+		font-size: 11px;
+		text-transform: uppercase;
+		color: #727988;
+	}
+
+	td {
+		font-size: 14px;
+		color: #1F1F1F;
+	}
+}
+
+.thead {}
+
+.tbody {
+
+	.conflict {
+		color: #B12525;
+	}
+}
+
+.tr {
+	margin: 50px;
+	border-spacing: 0 20px;
+	-webkit-border-horizontal-spacing: 0px;
+	-webkit-border-vertical-spacing: 10px;
+
+	.tbody &:nth-child(odd) {
+		background-color: var(--color-table-row);
+	}
+}
+
+.name {
+	max-width: 70px;
+}
+
+.rating {
+	max-width: 70px;
+}
+
+.clients {
+	max-width: 70px;
+}
+
+.dairys {
+	max-width: 100px;
+}
+
+.nagruzka {
+	max-width: 70px;
+}
+
+.tags {
+	max-width: 70px;
+}
+
+.commet {
+	max-width: 250px;
+	overflow: hidden;
+}

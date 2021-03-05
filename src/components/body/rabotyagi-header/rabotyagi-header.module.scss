@@ -1,0 +1,8 @@
+.h1 {
+	composes: headingH1 from "../../../index.css";
+}
+
+.p {
+	composes: description from "../../../index.css";
+	margin-top: -20px;
+}
