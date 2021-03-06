@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { close, filterByName } from "../../store/state";
 import RowSpaceBetween from "../../templates/row-space-between/row-space-between";
 import Search from "../header/search/search";
@@ -22,18 +22,23 @@ const customStyles = {
     },
 };
 
-// Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
 Modal.setAppElement("#root");
 
-export default function ModalApp({ isOpen = false }) {
+export default function ModalApp() {
     const dispatch = useDispatch();
-    let [isOpenModal, setOpen] = useState(isOpen);
+    let is = useSelector((state) => state.data.isModalOpen);
+    let [isOpenModal, setOpen] = useState(false);
+    
+    useEffect(() => {
+        setOpen(is);
+    }, [is, setOpen]);
+
 
     function closeModal() {
         dispatch(close());
-        setOpen(false);
+        setOpen(false)
     }
-    console.log("modal", isOpenModal);
+
     return (
         <Modal
             isOpen={isOpenModal}

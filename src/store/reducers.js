@@ -37,6 +37,7 @@ const handlers = {
     [FILTER_BY_NAME]: (state, { payload }) => ({
         ...state,
         rabotyagi: payload,
+        isModalOpen: true,
     }),
     [OPEN]: (state, { rabotyagi, dairyJson }) => ({
         ...state,

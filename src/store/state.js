@@ -58,7 +58,6 @@ export const filterByName = (payload) => {
 };
 
 export const open = () => {
-    console.log("open");
     return { type: OPEN, rabotyagi: rabotyagi, dairyJson: dairyJson };
 };
 export const close = () => {

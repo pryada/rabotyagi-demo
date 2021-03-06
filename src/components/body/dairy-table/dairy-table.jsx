@@ -12,14 +12,9 @@ function DairyTable({ path }) {
     }, [dispatch, path]);
 
     let list = useSelector((state) => state.data.dairys) || [];
-    // let isOpen = useSelector((state) => state.data.isModalOpen);
-    let [isModalOpen, setOpen] = useState(false);
-
+    
     const openHandler = () => {
-        console.log("openHandler");
         dispatch(open());
-        setOpen(true);
-        console.log("isModalOpen", isModalOpen);
     };
     return (
         <>
@@ -61,7 +56,7 @@ function DairyTable({ path }) {
                     })}
                 </tbody>
             </table>
-            {isModalOpen && <ModalApp isOpen={isModalOpen} />}
+            <ModalApp />
         </>
     );
 }
