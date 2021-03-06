@@ -18,7 +18,7 @@ function ModalTable() {
                 </thead>
                 <tbody className={styles.tbody}>
                     {list.map((item, index) => {
-                        if (index > 6) return;
+                        if (index > 6) return null;
                         const tags = item.tags.join(", ");
                         return (
                             <tr className={styles.tr} key={`${item.id}${item.name}`}>
